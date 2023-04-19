@@ -1,0 +1,38 @@
+@page "/Employees/Empleado"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Empleado</PageTitle>
+
+<h1>Empleado</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nomina</th>
+                <th>CURP</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var empleado in empleados)
+            {
+                <tr>
+                    <td>@empleado.Nomina</td>
+                    <td>@empleado.CURP</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Empleado[]? empleados;
+        protected override void OnInitialized()
+        {
+            empleados = EmpleadoClient.GetEmpleado();
+        }
+}

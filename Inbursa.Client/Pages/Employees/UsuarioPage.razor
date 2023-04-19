@@ -1,0 +1,50 @@
+@page "/Employees/Usuario"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Usuario</PageTitle>
+
+<h1>Usuario</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>CURP</th>
+                <th>Nombre</th>
+                <th>Apellido_P</th>
+                <th>Apellido_M</th>
+                <th>Cumpleaños</th>
+                <th>Contraseña</th>
+                <th>Autorizada</th>
+                <th>Nom_Usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in usuarios)
+            {
+                <tr>
+                    <td>@usuario.CURP</td>
+                    <td>@usuario.Nombre</td>
+                    <td>@usuario.Apellido_P</td>
+                    <td>@usuario.Apellido_M</td>
+                    <td>@usuario.Cumpleanos</td>
+                    <td>@usuario.Contrasena</td>
+                    <td>@usuario.Autorizada</td>
+                    <td>@usuario.Nom_Usuario</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Usuario[]? usuarios;
+        protected override void OnInitialized()
+        {
+            usuarios = UsuarioClient.GetUsuarios();
+        }
+}

@@ -1,0 +1,48 @@
+@page "/Users/Historial"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Historial</PageTitle>
+
+<h1>Historial</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Num_Historial</th>
+                <th>Cantidad</th>
+                <th>Pago_Realizados</th>
+                <th>Pago_Pendientes</th>
+                <th>Num_Cuenta</th>
+                <th>Nomina_Encargado</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var historial in historiales)
+            {
+                <tr>
+                    <td>@historial.Num_Historial</td>
+                    <td>@historial.Cantidad</td>
+                    <td>@historial.Pago_Realizados</td>
+                    <td>@historial.Pago_Pendientes</td>
+                    <td>@historial.Num_Cuenta</td>
+                    <td>@historial.Nomina_Encargado</td>
+                    <td>@historial.Estado</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Historial[]? historiales;
+        protected override void OnInitialized()
+        {
+            historiales = HistorialClient.GetHistorial();
+        }
+}
