@@ -1,0 +1,40 @@
+@page "/Users/Rifa"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Rifa</PageTitle>
+
+<h1>Rifa</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Num_Boleto</th>
+                <th>Cuenta</th>
+                <th>Fecha_Boleto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var rifa in rifas)
+            {
+                <tr>
+                    <td>@rifa.Num_Boleto</td>
+                    <td>@rifa.Cuenta</td>
+                    <td>@rifa.Fecha_Boleto</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Rifa[]? rifas;
+        protected override void OnInitialized()
+        {
+            rifas = RifaClient.GetRifa();
+        }
+}

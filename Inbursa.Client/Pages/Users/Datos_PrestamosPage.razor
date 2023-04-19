@@ -1,0 +1,46 @@
+@page "/Users/Datos_Prestamos"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Datos_Prestamos</PageTitle>
+
+<h1>Datos_Prestamos</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Num_Folio</th>
+                <th>Fecha_Solicitud</th>
+                <th>Fecha_Aprobacion</th>
+                <th>Fecha_Liquidacion</th>
+                <th>Fecha_Limite</th>
+                <th>Num_Historial</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Datos_Prestamos in Datos_Prestamosos)
+            {
+                <tr>
+                    <td>@Datos_Prestamos.Num_Folio</td>
+                    <td>@Datos_Prestamos.Fecha_Solicitud</td>
+                    <td>@Datos_Prestamos.Fecha_Aprobacion</td>
+                    <td>@Datos_Prestamos.Fecha_Liquidacion</td>
+                    <td>@Datos_Prestamos.Fecha_Limite</td>
+                    <td>@Datos_Prestamos.Num_Historial</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Datos_Prestamos[]? Datos_Prestamosos;
+        protected override void OnInitialized()
+        {
+            Datos_Prestamosos = Datos_PrestamosClient.GetDatos_Prestamos();
+        }
+}

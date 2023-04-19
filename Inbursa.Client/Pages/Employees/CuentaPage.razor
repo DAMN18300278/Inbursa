@@ -1,0 +1,42 @@
+@page "/Employees/Cuenta"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Cuenta</PageTitle>
+
+<h1>Cuenta</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Saldo</th>
+                <th>Num_Cuenta</th>
+                <th>Prestamo_Activo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cuenta in cuentas)
+            {
+                <tr>
+                    <td>@cuenta.Usuario</td>
+                    <td>@cuenta.Saldo</td>
+                    <td>@cuenta.Num_Cuenta</td>
+                    <td>@cuenta.Prestamo_Activo</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Cuenta[]? cuentas;
+        protected override void OnInitialized()
+        {
+            cuentas = CuentaClient.GetCuenta();
+        }
+}

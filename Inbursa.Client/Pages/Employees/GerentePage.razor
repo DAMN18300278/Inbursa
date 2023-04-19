@@ -1,0 +1,40 @@
+@page "/Employees/Gerente"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Models
+
+<PageTitle>Gerente</PageTitle>
+
+<h1>Gerente</h1>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Num_Nom</th>
+                <th>Nomina</th>
+                <th>Dias_Vacaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var gerente in gerentes)
+            {
+                <tr>
+                    <td>@gerente.Num_Nom</td>
+                    <td>@gerente.Nomina</td>
+                    <td>@gerente.Dias_Vacaciones</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@code
+{
+    private Gerente[]? gerentes;
+        protected override void OnInitialized()
+        {
+            gerentes = GerenteClient.GetGerente();
+        }
+}
