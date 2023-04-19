@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Users/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
