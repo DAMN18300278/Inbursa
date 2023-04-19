@@ -1,0 +1,113 @@
+@page "/register"
+@using Microsoft.AspNetCore.Components.Forms
+@using System.Collections.Generic
+@using System.Text.RegularExpressions
+@using Microsoft.Extensions.Logging
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+
+<html>
+<head>
+    <title>Registro de Usuarios</title>
+    <style>
+    body {
+      background-color: #F9F9F9;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      background-color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .card-header {
+      background-color: #333333;
+      border-radius: 5px 5px 0 0;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 10px;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .form-control {
+      border-color: #DDDDDD;
+    }
+    .btn-primary {
+      background-color: #e0c319;
+      border-color: #e0c319;
+    }
+    .btn-primary:hover {
+      background-color: #e0c319;
+      border-color: #e0c319;
+    }
+    .btn-secondary {
+      background-color: #333333;
+      border-color: #333333;
+    }
+    .btn-secondary:hover {
+      background-color: #2E2E2E;
+      border-color: #2E2E2E;
+    }
+  </style>
+</head>
+<body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="mb-0">Registro</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="curp">CURP</label>
+                                <InputText id="curp" class="form-control" @bind-Value="Curp" />
+                            </div>
+                            <div class="form-group">
+                                <label for="nombres">Nombres</label>
+                                <InputText id="nombres" class="form-control" @bind-Value="Nombres" />
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidoPaterno">Apellido Paterno</label>
+                                <InputText id="apellidoPaterno" class="form-control" @bind-Value="ApellidoPaterno" />
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidoMaterno">Apellido Materno</label>
+                                <InputText id="apellidoMaterno" class="form-control" @bind-Value="ApellidoMaterno" />
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                                <InputDate id="fechaNacimiento" class="form-control" @bind-Value="FechaNacimiento" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">ContraseÃ±a</label>
+                                <InputText id="password" class="form-control" @bind-Value="Password" type="password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="nombreUsuario">Nombre de Usuario</label>
+                                <InputText id="nombreUsuario" class="form-control" @bind-Value="NombreUsuario" />
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Registrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+@code {
+    private string Curp { get; set; }
+    private string Nombres { get; set; }
+    private string ApellidoPaterno { get; set; }
+    private string ApellidoMaterno { get; set; }
+    private DateTime FechaNacimiento { get; set; }
+    private string Password { get; set; }
+    private bool Autorizada { get; set; }
+    private string NombreUsuario { get; set; }
+}
