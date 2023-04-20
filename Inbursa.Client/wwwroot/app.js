@@ -9,9 +9,14 @@ function iniciarFuncion(){
           loop: true
         });
       }, 200);
-    
-    document.getElementById('app').style.display = 'block';
-    animateCSS('app', 'fadeInRight'); 
+      document.getElementById('app').style.display = 'block';
+      animateCSS('app', 'fadeInUp');
+}
+
+function cambiarPestaña(){
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  animateCSS('app', 'fadeInUp');
 }
 
 setTimeout(iniciarFuncion, 700);

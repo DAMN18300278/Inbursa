@@ -7,7 +7,7 @@
 @inject NavigationManager NavigationManager
 
 
-<html>
+@* <html>
 <head>
     <title>Registro de Usuarios</title>
     <style>
@@ -100,7 +100,50 @@
             </div>
         </div>
 </body>
-</html>
+</html> *@
+
+<div class="w-50 bg-white h-75 mx-auto shadow mt-5 d-flex" style="border-radius: 25px;">
+  <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
+  <div class="p-4 py-5 w-100">
+    <h1 class="mb-4">Comience su experiencia con <span style="font-weight: bold">Inbursa</span></h1>
+    <form class="form-group border p-4 d-flex flex-column align-items-start w-100 h-75" style="overflow-y: scroll;">
+      <h4>Registro de cuenta</h4>
+      <div class="form-group mt-4 w-100">
+          <label for="curp" class="fw-bold">CURP</label>
+          <InputText id="curp" class="form-control p-2 px-3" @bind-Value="Curp" placeholder="Curp"/>
+      </div>
+      <div class="form-group mt-4 w-100">
+          <label for="nombres" class="fw-bold">Nombres</label>
+          <InputText id="nombres" class="form-control p-2 px-3" @bind-Value="Nombres" placeholder=""/>
+      </div>
+      <div class="form-group mt-4 w-100">
+          <label for="apellidoPaterno" class="fw-bold">Apellido Paterno</label>
+          <InputText id="apellidoPaterno" class="form-control p-2 px-3" @bind-Value="ApellidoPaterno" placeholder=""/>
+      </div>
+      <div class="form-group mt-4 w-100">
+          <label for="apellidoMaterno" class="fw-bold">Apellido Materno</label>
+          <InputText id="apellidoMaterno" class="form-control p-2 px-3" @bind-Value="ApellidoMaterno" placeholder=""/>
+      </div>
+      <div class="form-group mt-4 w-100">
+          <label for="fechaNacimiento" class="fw-bold">Fecha de Nacimiento</label>
+          <InputDate id="fechaNacimiento" class="form-control p-2 px-3" @bind-Value="FechaNacimiento" placeholder=""/>
+      </div>
+      <div class="form-group mt-4 w-100">
+          <label for="password" class="fw-bold">Contraseña</label>
+          <InputText id="password" class="form-control p-2 px-3" @bind-Value="Password" type="password" placeholder=""/>
+      </div>
+      <div class="form-group mt-4 w-100">
+          <label for="nombreUsuario" class="fw-bold">Nombre de Usuario</label>
+          <InputText id="nombreUsuario" class="form-control p-2 px-3" @bind-Value="NombreUsuario" placeholder=""/>
+      </div>
+      <button type="submit" class="btn btn-primary p-2 px-4 rounded-pill mt-4" style="letter-spacing: 2px;"> 
+        Registrarme
+      </button>
+      <a class="mt-2 link-dark" href="/" onclick="cambiarPestaña()" style="cursor: pointer;">Log In</a>
+    </form>
+  </div>
+
+</div>
 @code {
     private string? Curp { get; set; }
     private string? Nombres { get; set; }
@@ -110,4 +153,5 @@
     private string? Password { get; set; }
     private bool Autorizada { get; set; }
     private string? NombreUsuario { get; set; }
+
 }

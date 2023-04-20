@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-kgowZLZGyceaJo4bHvVY1kmm1GJuawa5rPO1RCfNYWc=",
       "netstandard.dll": "sha256-2\/SuexPFW8hizUgbgPcchYHfG\/zmGzzMN6ESSyefPRQ=",
       "System.Private.CoreLib.dll": "sha256-mcywrbK0VZXiOvZ4dxU1ocaPZFplCRSIPQ\/wFikcrus=",
-      "Inbursa.Client.dll": "sha256-ACMaoSKb0ptmmRH6nSrfdAGqTW6eWuoXH6TsRfEbmZk="
+      "Inbursa.Client.dll": "sha256-KWlkyw6Dn8IXDi\/UufiyoYJ0j146f4wvVQjMgpaJATY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Inbursa.Client.pdb": "sha256-LckMIPoUeSheiMZGTvPyFwRF4\/Na7FQ5z8j\/gqCZobk="
+      "Inbursa.Client.pdb": "sha256-zVGccMQJE7oiR1qZmEemKAXZ+H2XgRm30fKuQ05E06Y="
     },
     "runtime": {
       "dotnet.7.0.3.eq14o6dwgh.js": "sha256-DxGvmbtUa6hGJpk3VyMEbkPZ653qWbQkh8X4ZVM9TWM=",

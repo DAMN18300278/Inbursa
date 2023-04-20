@@ -15,7 +15,7 @@ h1:focus {
 }
 
 a, .btn-link {
-    color: #0071c1;
+    color: #585858;
 }
 
 .btn-primary {
@@ -24,8 +24,13 @@ a, .btn-link {
     border-color: rgba(0,143,43,0.75);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem rgba(0,143,43,0.50);
+.btn-primary:hover,.btn-primary:focus, .btn-primary:active:focus{
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus, .btn:hover, .btn-primary:hover{
+    box-shadow: 0 0 0 0.1rem rgb(37, 37, 37), 0 0 0 0.25rem rgba(0,143,43,0.50);
 }
 
 .content {
@@ -117,4 +122,25 @@ a, .btn-link {
 .form-control:focus{
     border-color: rgba(0,0,0,0.25);
     box-shadow: 0 0 0 0.2rem rgba(0,143,43,0.50);
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    background-color: #00000000;
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbars-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#009a0a;
+    border-radius: 10px;
+    padding-left: 10%;
 }
