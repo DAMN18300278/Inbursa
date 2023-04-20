@@ -2,17 +2,8 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Iniciar sesión JAAAA</title>
-
+@* <head>
   <style>
-    body {
-      background-color: #F9F9F9;
-    }
     .container {
       margin-top: 50px;
     }
@@ -54,13 +45,12 @@
   </style>
 
 </head>
-<body>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card">
           <div class="card-header"> 
-            <h4 class="mb-0">Iniciar sesión JAAAAAAAAAAAAAAAAAAAA</h4>
+            <h4 class="mb-0">Iniciar sesión</h4>
           </div>
           <div class="card-body">
             <form>
@@ -84,10 +74,30 @@
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </div> *@
 
-</html>
+<div class="w-50 bg-white h-75 mx-auto shadow mt-5 d-flex" style="border-radius: 25px;">
+  <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
+  <div class="p-4 py-5">
+    <h1 class="mb-4">Bienvenido a <span style="font-weight: bold">Inbursa</span></h1>
+    <form class="form-group border p-4">
+      <h4>Inicio de sesión</h4>
+      <div class="form-group mx-auto my-4">
+        <label for="correo" class="fw-bold">Correo electronico:</label>
+        <input type="user" name="correo" class="form-control p-2 px-3" id="user" placeholder="Correo" required>
+      </div>
+      <div class="form-group mx-auto my-4">
+        <label for="correo" class="fw-bold">Contraseña:</label>
+        <input type="password" class="form-control p-2 px-3" id="password" placeholder="Contraseña" required>
+      </div>
+      <button type="submit" class="btn btn-primary p-2 px-4 rounded-pill" style="letter-spacing: 2px;"> 
+        Log In
+      </button>
+    </form>
+  </div>
+
+</div>
+
 
 @code {
   private void GoToRegisterPage()

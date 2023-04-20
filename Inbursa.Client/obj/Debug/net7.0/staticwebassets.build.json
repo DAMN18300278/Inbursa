@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6vhymbP//irGDTzywUK9SDz7FIJwE9ExoZR77pSveNY=",
+  "Hash": "koH9nXrI20xUjCGGQO1vg/sDKmvMXyDYRDc2rQpTl3A=",
   "Source": "Inbursa.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -6902,6 +6902,23 @@
       "OriginalItemSpec": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Inbursa.Client.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\app.js",
+      "SourceId": "Inbursa.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.js"
+    },
+    {
       "Identity": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\app.css",
       "SourceId": "Inbursa.Client",
       "SourceType": "Discovered",
@@ -7172,6 +7189,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\src\\bg.jpg",
+      "SourceId": "Inbursa.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "src/bg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\src\\bg.jpg"
     }
   ]
 }

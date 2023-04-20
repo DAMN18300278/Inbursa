@@ -20,8 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Employees/CuentaPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEN1ZW50YVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Employees/EmpleadoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxlYWRvUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Employees/GerentePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEdlcmVudGVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Employees/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Employees/UsuarioPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXFVzdWFyaW9QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Index.razor]
@@ -32,8 +48,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Users/Datos_PrestamosPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGF0b3NfUHJlc3RhbW9zUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Users/HistorialPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSGlzdG9yaWFsUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Users/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Pages/Users/RifaPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUmlmYVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Diego/Desktop/banco_PA/Banco_PW/Inbursa.Client/Shared/SurveyPrompt.razor]

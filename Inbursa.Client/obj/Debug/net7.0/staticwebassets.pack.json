@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Inbursa.Client.styles.css"
     },
     {
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
       "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -75,6 +79,10 @@
     {
       "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\src\\bg.jpg",
+      "PackagePath": "staticwebassets\\src\\bg.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Inbursa.Client.Microsoft.AspNetCore.StaticWebAssets.props",
