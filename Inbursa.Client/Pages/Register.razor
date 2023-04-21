@@ -12,7 +12,7 @@
   <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
   <div class="p-4 py-5 w-100 h-100 d-flex flex-column"> 
     <h1 class="mb-4">Comience su experiencia con <span style="font-weight: bold">Inbursa</span></h1>
-    <EditForm Model="@model" OnValidSubmit="CrearUsuario" class="form-group border p-4 d-flex flex-column align-items-start w-100 h-100" style="overflow-y: scroll;">
+    <EditForm Model="@model" OnValidSubmit="@CrearUsuario" class="form-group border p-4 d-flex flex-column align-items-start w-100 h-100" style="overflow-y: scroll;">
       <DataAnnotationsValidator />
       <ValidationSummary />
       <h4>Registro de cuenta</h4>
@@ -55,7 +55,7 @@
 
 @code {
     [Parameter]
-    private string? Curp { get; set; }
+    public string? Curp { get; set; }
     private string? Nombres { get; set; }
     private string? ApellidoPaterno { get; set; }
     private string? ApellidoMaterno { get; set; }
@@ -64,13 +64,11 @@
     private bool Autorizada { get; set; }
     private string? NombreUsuario { get; set; }
     private string? Error { get; set; }
-
     private Usuario model = new();
 
     private async Task CrearUsuario(){
-        return await UsuarioClient.CrearUsuarioAsync(model);
+        await Http.PostAsJsonAsync("http://localhost:5237/api/Usuario/Add", model);
     }
-
 
     private void ValidarCurp()
     {
