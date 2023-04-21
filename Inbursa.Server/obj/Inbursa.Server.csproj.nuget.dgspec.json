@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Server\\Inbursa.Server.csproj": {}
+    "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Server\\Inbursa.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Server\\Inbursa.Server.csproj": {
+    "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Server\\Inbursa.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Server\\Inbursa.Server.csproj",
+        "projectUniqueName": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Server\\Inbursa.Server.csproj",
         "projectName": "Inbursa.Server",
-        "projectPath": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Server\\Inbursa.Server.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Server\\obj\\",
+        "projectPath": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Server\\Inbursa.Server.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,9 +38,35 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Ardalis.ApiEndpoints": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -68,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
