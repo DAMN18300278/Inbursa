@@ -9,73 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Inbursa.Client
 build_property.RootNamespace = Inbursa.Client
-build_property.ProjectDir = F:\DescargasF\Inbursa-main\Inbursa\Inbursa.Client\
+build_property.ProjectDir = f:\DescargasF\Inbursa-main\Inbursa\Inbursa.Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\DescargasF\Inbursa-main\Inbursa\Inbursa.Client
+build_property.MSBuildProjectDirectory = f:\DescargasF\Inbursa-main\Inbursa\Inbursa.Client
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/App.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/CuentaPage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/CuentaPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEN1ZW50YVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/EmpleadoPage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/EmpleadoPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxlYWRvUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/GerentePage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/GerentePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEdlcmVudGVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/Index.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/UsuarioPage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Employees/UsuarioPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXFVzdWFyaW9QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Index.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Register.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/Datos_PrestamosPage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/Datos_PrestamosPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGF0b3NfUHJlc3RhbW9zUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/HistorialPage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/HistorialPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSGlzdG9yaWFsUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/Index.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/RifaPage.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Pages/Users/RifaPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUmlmYVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Shared/SurveyPrompt.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/_Imports.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Shared/MainLayout.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-creifl9mhb
 
-[F:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Shared/NavMenu.razor]
+[f:/DescargasF/Inbursa-main/Inbursa/Inbursa.Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3boti1zoti

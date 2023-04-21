@@ -4,6 +4,7 @@ namespace Inbursa.Server.Models;
 
 public class Historial
 {
+    [Key]
     public int Num_Historial { get; set; }
     public float Cantidad { get; set; }
     public int Pago_Realizados { get; set; }
