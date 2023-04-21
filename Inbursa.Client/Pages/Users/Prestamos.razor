@@ -1,0 +1,82 @@
+@* @page "/prestamos"
+@using Microsoft.AspNetCore.Components.Forms
+@using System.Text.RegularExpressions
+@using Microsoft.Extensions.Logging
+@inject NavigationManager NavigationManager
+@using Inbursa.Client.Models
+
+<h3>Crear préstamo</h3>
+
+@if (!string.IsNullOrEmpty(Error))
+{
+    <div class="alert alert-danger" role="alert">
+        @Error
+    </div>
+}
+
+<EditForm Model="@Model" OnValidSubmit="@CrearPrestamo">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="folio">Folio:</label>
+        <InputText class="form-control" id="folio" @bind-Value="@Model.Folio" />
+    </div>
+
+    <div class="form-group">
+        <label for="fechaSolicitud">Fecha de solicitud:</label>
+        <InputDate class="form-control" id="fechaSolicitud" @bind-Value="@Model.FechaSolicitud" />
+    </div>
+
+    <div class="form-group">
+        <label for="fechaAprobacion">Fecha de aprobación:</label>
+        <InputDate class="form-control" id="fechaAprobacion" @bind-Value="@Model.FechaAprobacion" />
+    </div>
+
+    <div class="form-group">
+        <label for="fechaLiquidacion">Fecha de liquidación:</label>
+        <InputDate class="form-control" id="fechaLiquidacion" @bind-Value="@Model.FechaLiquidacion" />
+    </div>
+
+    <div class="form-group">
+        <label for="fechaLimite">Fecha límite:</label>
+        <InputDate class="form-control" id="fechaLimite" @bind-Value="@Model.FechaLimite" />
+    </div>
+
+    <div class="form-group">
+        <label for="numeroHistorial">Número de historial:</label>
+        <InputNumber class="form-control" id="numeroHistorial" @bind-Value="@Model.NumeroHistorial" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear préstamo</button>
+</EditForm>
+
+@code {
+    private Prestamo Model = new Prestamo();
+
+    private string? Error { get; set; }
+
+    private void HandleValidSubmit()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    public void CrearPrestamo(){
+        
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.FechaSolicitud = DateTime.Today;
+    }
+
+    private class Prestamo
+    {
+        public int Folio { get; set; }
+        public DateTime FechaSolicitud { get; set; }
+        public DateTime FechaAprobacion { get; set; }
+        public DateTime FechaLiquidacion { get; set; }
+        public DateTime FechaLimite { get; set; }
+        public int NumeroHistorial { get; set; }
+    }
+} *@
