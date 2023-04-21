@@ -9,44 +9,167 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+<<<<<<< HEAD
         "HashCode": -804992072,
+=======
+        "HashCode": 2040735112,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
         "Kind": "Components.Component",
-        "Name": "Inbursa.Client.App",
+        "Name": "Inbursa.Client.Pages.Users.HistorialPage",
         "AssemblyName": "Inbursa.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "HistorialPage"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.App",
-          "Common.TypeNamespace": "Inbursa.Client",
-          "Common.TypeNameIdentifier": "App"
+          "Common.TypeName": "Inbursa.Client.Pages.Users.HistorialPage",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "HistorialPage"
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": -850490114,
+=======
+        "HashCode": -1890252269,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
         "Kind": "Components.Component",
-        "Name": "Inbursa.Client.App",
+        "Name": "Inbursa.Client.Pages.Users.HistorialPage",
         "AssemblyName": "Inbursa.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Inbursa.Client.App"
+            "TagName": "Inbursa.Client.Pages.Users.HistorialPage"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.App",
-          "Common.TypeNamespace": "Inbursa.Client",
-          "Common.TypeNameIdentifier": "App",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.HistorialPage",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "HistorialPage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": 1310013217,
+=======
+        "HashCode": -1344842504,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Users.RifaPage",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RifaPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.RifaPage",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "RifaPage"
+        }
+      },
+      {
+        "HashCode": -1754881038,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Users.RifaPage",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.Pages.Users.RifaPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.RifaPage",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "RifaPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -205352628,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Users.Datos_PrestamosPage",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Datos_PrestamosPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.Datos_PrestamosPage",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "Datos_PrestamosPage"
+        }
+      },
+      {
+        "HashCode": 44514834,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Users.Datos_PrestamosPage",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.Pages.Users.Datos_PrestamosPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.Datos_PrestamosPage",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "Datos_PrestamosPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1260983102,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Users.Index",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.Index",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "Index"
+        }
+      },
+      {
+        "HashCode": 2062564463,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Users.Index",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.Pages.Users.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Users.Index",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
+          "Common.TypeNameIdentifier": "Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 470920700,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
         "Kind": "Components.Component",
         "Name": "Inbursa.Client.Pages.Employees.CuentaPage",
         "AssemblyName": "Inbursa.Client",
@@ -231,9 +354,12 @@
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": 735631657,
+=======
+        "HashCode": 1015233785,
         "Kind": "Components.Component",
-        "Name": "Inbursa.Client.Pages.Index",
+        "Name": "Inbursa.Client.Pages.Employees.Index",
         "AssemblyName": "Inbursa.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -243,27 +369,106 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.Pages.Index",
-          "Common.TypeNamespace": "Inbursa.Client.Pages",
+          "Common.TypeName": "Inbursa.Client.Pages.Employees.Index",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Employees",
           "Common.TypeNameIdentifier": "Index"
         }
       },
       {
-        "HashCode": 716098684,
+        "HashCode": -1217040846,
         "Kind": "Components.Component",
-        "Name": "Inbursa.Client.Pages.Index",
+        "Name": "Inbursa.Client.Pages.Employees.Index",
         "AssemblyName": "Inbursa.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Inbursa.Client.Pages.Index"
+            "TagName": "Inbursa.Client.Pages.Employees.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.Pages.Index",
-          "Common.TypeNamespace": "Inbursa.Client.Pages",
+          "Common.TypeName": "Inbursa.Client.Pages.Employees.Index",
+          "Common.TypeNamespace": "Inbursa.Client.Pages.Employees",
           "Common.TypeNameIdentifier": "Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1197179084,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Register",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Register",
+          "Common.TypeNamespace": "Inbursa.Client.Pages",
+          "Common.TypeNameIdentifier": "Register"
+        }
+      },
+      {
+        "HashCode": -1121130020,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Register",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.Pages.Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Register",
+          "Common.TypeNamespace": "Inbursa.Client.Pages",
+          "Common.TypeNameIdentifier": "Register",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1290356037,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.App",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.App",
+          "Common.TypeNamespace": "Inbursa.Client",
+          "Common.TypeNameIdentifier": "App"
+        }
+      },
+      {
+<<<<<<< HEAD
+        "HashCode": 716098684,
+=======
+        "HashCode": 1702917356,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.App",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.App",
+          "Common.TypeNamespace": "Inbursa.Client",
+          "Common.TypeNameIdentifier": "App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -512,7 +717,48 @@
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": 2105808232,
+=======
+        "HashCode": 1901758857,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Shared.NavMenu",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Shared.NavMenu",
+          "Common.TypeNamespace": "Inbursa.Client.Shared",
+          "Common.TypeNameIdentifier": "NavMenu"
+        }
+      },
+      {
+        "HashCode": 416413557,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Shared.NavMenu",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Shared.NavMenu",
+          "Common.TypeNamespace": "Inbursa.Client.Shared",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 544759110,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
         "Kind": "Components.Component",
         "Name": "Inbursa.Client.Shared.MainLayout",
         "AssemblyName": "Inbursa.Client",
@@ -618,39 +864,47 @@
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": 1732625407,
+=======
+        "HashCode": -1432052489,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
         "Kind": "Components.Component",
-        "Name": "Inbursa.Client.Shared.NavMenu",
+        "Name": "__GeneratedComponent.AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a",
         "AssemblyName": "Inbursa.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.Shared.NavMenu",
-          "Common.TypeNamespace": "Inbursa.Client.Shared",
-          "Common.TypeNameIdentifier": "NavMenu"
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a",
+          "Common.TypeNamespace": "__GeneratedComponent",
+          "Common.TypeNameIdentifier": "AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a"
         }
       },
       {
+<<<<<<< HEAD
         "HashCode": 1005062598,
+=======
+        "HashCode": 527713363,
+>>>>>>> 4156c7e4883e28ce6ae7b2692b9b5aab92e6fd73
         "Kind": "Components.Component",
-        "Name": "Inbursa.Client.Shared.NavMenu",
+        "Name": "__GeneratedComponent.AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a",
         "AssemblyName": "Inbursa.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Inbursa.Client.Shared.NavMenu"
+            "TagName": "__GeneratedComponent.AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.Shared.NavMenu",
-          "Common.TypeNamespace": "Inbursa.Client.Shared",
-          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a",
+          "Common.TypeNamespace": "__GeneratedComponent",
+          "Common.TypeNameIdentifier": "AspNetCore_a9cbfb947add639350e6b9d3e6b6710cb29dee5a",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
