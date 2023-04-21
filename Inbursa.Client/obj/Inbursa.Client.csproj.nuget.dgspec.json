@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\Inbursa.Client.csproj": {}
+    "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\Inbursa.Client.csproj": {}
   },
   "projects": {
-    "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\Inbursa.Client.csproj": {
+    "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\Inbursa.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\Inbursa.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\Inbursa.Client.csproj",
         "projectName": "Inbursa.Client",
-        "projectPath": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\Inbursa.Client.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\obj\\",
+        "projectPath": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\Inbursa.Client.csproj",
+        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,6 +74,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -88,7 +94,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.5, 7.0.5]"
+              "version": "[7.0.3, 7.0.3]"
             }
           ],
           "frameworkReferences": {
@@ -96,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

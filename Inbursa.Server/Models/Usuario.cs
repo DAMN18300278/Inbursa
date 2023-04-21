@@ -11,6 +11,6 @@ public class Usuario
    public String? Apellido_M { get; set; }
    public DateTime Cumpleanos  { get; set; }
    public String? Contrasena {get; set;}
-   public bool Autorizada {get; set;}
+   public byte Autorizada {get; set;}
    public String? Nom_Usuario {get; set;}
 }

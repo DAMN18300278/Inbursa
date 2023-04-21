@@ -1,6 +1,10 @@
 ﻿@page "/"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components.Forms
+@using Inbursa.Client.Models
+
+
 
 <div class="w-50 bg-white h-75 mx-auto shadow mt-5 d-flex" style="border-radius: 25px;">
   <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
@@ -9,18 +13,19 @@
     <form class="form-group border p-4 d-flex flex-column align-items-start" style="overflow-y: scroll;">
       <h4>Inicio de sesión</h4>
       <div class="form-group mt-4 w-100">
-        <label for="correo" class="fw-bold">Correo electronico:</label>
-        <input type="user" name="correo" class="form-control p-2 px-3" id="user" placeholder="Correo" required>
+        <label for="correo" class="fw-bold">Usuario</label>
+        <input type="user" name="usuario" class="form-control p-2 px-3" id="user" placeholder="Usuario" required>
       </div>
       <div class="form-group mt-4 w-100">
         <label for="correo" class="fw-bold">Contraseña:</label>
         <input type="password" class="form-control p-2 px-3" id="password" placeholder="Contraseña" required>
       </div>
+
       <button type="submit" class="btn btn-primary p-2 px-4 rounded-pill mt-4" style="letter-spacing: 2px;"> 
         Log In
       </button>
       <a class="mt-2 link-dark" href="/register" onclick="cambiarPestaña()" style="cursor: pointer;">Registrarme</a>
     </form>
   </div>
-
 </div>
+

@@ -1,0 +1,14 @@
+
+POST http://localhost:5237/api/Usuario/Add
+content-type: application/json
+
+{
+    "curp": "POPOOOOO",
+    "nombre": "1",
+    "apellido_P": "1",
+    "apellido_M": "1",
+    "cumpleanos": "2024-07-07T00:00:00",
+    "contrasena": "popo",
+    "autorizada": 1,
+    "nom_Usuario": "juan escutia"
+}

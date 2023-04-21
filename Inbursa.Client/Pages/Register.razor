@@ -3,52 +3,58 @@
 @using System.Collections.Generic
 @using System.Text.RegularExpressions
 @using Microsoft.Extensions.Logging
+@using Inbursa.Client
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using Inbursa.Client.Models
 
 <div class="w-50 bg-white h-75 mx-auto shadow mt-5 d-flex" style="border-radius: 25px;">
   <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
   <div class="p-4 py-5 w-100 h-100 d-flex flex-column"> 
     <h1 class="mb-4">Comience su experiencia con <span style="font-weight: bold">Inbursa</span></h1>
-    <form class="form-group border p-4 d-flex flex-column align-items-start w-100 h-100" style="overflow-y: scroll;">
+    <EditForm Model="@model" OnValidSubmit="CrearUsuario" class="form-group border p-4 d-flex flex-column align-items-start w-100 h-100" style="overflow-y: scroll;">
+      <DataAnnotationsValidator />
+      <ValidationSummary />
       <h4>Registro de cuenta</h4>
       <div class="form-group mt-4 w-100">
           <label for="curp" class="fw-bold">CURP</label>
-          <InputText id="curp" class="form-control p-2 px-3" @bind-Value="Curp" placeholder="Curp"/>
+          <InputText id="curp" class="form-control p-2 px-3" @bind-Value="@model.CURP" placeholder="Curp"></InputText>
+          <ValidationMessage For="@(() => model.CURP)" />
       </div>
       <div class="form-group mt-4 w-100">
           <label for="nombres" class="fw-bold">Nombres</label>
-          <InputText id="nombres" class="form-control p-2 px-3" @bind-Value="Nombres" placeholder=""/>
+          <InputText id="nombres" class="form-control p-2 px-3" @bind-Value="@model.Nombre" placeholder=""/>
       </div>
       <div class="form-group mt-4 w-100">
           <label for="apellidoPaterno" class="fw-bold">Apellido Paterno</label>
-          <InputText id="apellidoPaterno" class="form-control p-2 px-3" @bind-Value="ApellidoPaterno" placeholder=""/>
+          <InputText id="apellidoPaterno" class="form-control p-2 px-3" @bind-Value="@model.Apellido_P" placeholder=""/>
       </div>
       <div class="form-group mt-4 w-100">
           <label for="apellidoMaterno" class="fw-bold">Apellido Materno</label>
-          <InputText id="apellidoMaterno" class="form-control p-2 px-3" @bind-Value="ApellidoMaterno" placeholder=""/>
+          <InputText id="apellidoMaterno" class="form-control p-2 px-3" @bind-Value="@model.Apellido_M" placeholder=""/>
       </div>
       <div class="form-group mt-4 w-100">
           <label for="fechaNacimiento" class="fw-bold">Fecha de Nacimiento</label>
-          <InputDate id="fechaNacimiento" class="form-control p-2 px-3" @bind-Value="FechaNacimiento" placeholder=""/>
+          <InputDate id="fechaNacimiento" class="form-control p-2 px-3" @bind-Value="@model.Cumpleanos" placeholder=""/>
       </div>
       <div class="form-group mt-4 w-100">
           <label for="password" class="fw-bold">Contraseña</label>
-          <InputText id="password" class="form-control p-2 px-3" @bind-Value="Password" type="password" placeholder=""/>
+          <InputText id="password" class="form-control p-2 px-3" @bind-Value="@model.Contrasena" type="password" placeholder=""/>
       </div>
       <div class="form-group mt-4 w-100">
           <label for="nombreUsuario" class="fw-bold">Nombre de Usuario</label>
-          <InputText id="nombreUsuario" class="form-control p-2 px-3" @bind-Value="NombreUsuario" placeholder=""/>
+          <InputText id="nombreUsuario" class="form-control p-2 px-3" @bind-Value="@model.Nom_Usuario" placeholder=""/>
       </div>
       <button type="submit" class="btn btn-primary p-2 px-4 rounded-pill mt-4" style="letter-spacing: 2px;"> 
         Registrarme
       </button>
       <a class="mt-2 link-dark" href="/" onclick="cambiarPestaña()" style="cursor: pointer;">Log In</a>
-    </form>
+    </EditForm>
   </div>
-
 </div>
+
 @code {
+    [Parameter]
     private string? Curp { get; set; }
     private string? Nombres { get; set; }
     private string? ApellidoPaterno { get; set; }
@@ -57,5 +63,68 @@
     private string? Password { get; set; }
     private bool Autorizada { get; set; }
     private string? NombreUsuario { get; set; }
+    private string? Error { get; set; }
 
+    private Usuario model = new();
+
+    private async Task CrearUsuario(){
+        return await UsuarioClient.CrearUsuarioAsync(model);
+    }
+
+
+    private void ValidarCurp()
+    {
+        if (string.IsNullOrEmpty(Curp))
+        {
+            Error = "Debe ingresar un CURP";
+        }
+        else if (Curp.Length != 18)
+        {
+            Error = "El CURP debe tener 18 caracteres";
+        }
+        else if (Curp != Curp.ToUpper())
+        {
+            Error = "El CURP debe estar en mayúsculas";
+        }
+        else if (!ValidarCURP(Curp))
+        {
+            Error = "El CURP no es válido para los datos ingresados";
+        }
+        else
+        {
+            Error = null;
+        }
+    }
+
+    private bool ValidarCURP(string curp)
+    {
+        if (string.IsNullOrEmpty(Nombres) || string.IsNullOrEmpty(ApellidoPaterno) || string.IsNullOrEmpty(ApellidoMaterno))
+        {
+            return true; 
+        }
+
+        var anio = int.Parse(curp.Substring(4, 2));
+        var mes = int.Parse(curp.Substring(6, 2));
+        var dia = int.Parse(curp.Substring(8, 2));
+        var fechaNacimientoCurp = new DateTime(anio < 30 ? 2000 + anio : 1900 + anio, mes, dia);
+
+        return curp.Substring(0, 4) == ApellidoPaterno.Substring(0, 4) &&
+               curp.Substring(10, 2) == FechaNacimiento.ToString("yy") &&
+               curp.Substring(8, 2) == FechaNacimiento.ToString("MM") &&
+               curp.Substring(6, 2) == FechaNacimiento.ToString("dd") &&
+               curp.Substring(13, 1) == (string.IsNullOrEmpty(ApellidoMaterno) ? "X" : ApellidoMaterno.Substring(0, 1)) &&
+               curp.Substring(12, 1) == Nombres.Substring(0, 1) &&
+               curp.Substring(14, 1) == (string.IsNullOrEmpty(NombreUsuario) ? "X" : NombreUsuario.Substring(0, 1)) &&
+               curp.Substring(15, 1) == Password.Substring(0, 1);
+    }
+
+    private async Task Registrar()
+    {
+        ValidarCurp();
+
+        if (!string.IsNullOrEmpty(Error))
+        {
+            return;
+        }
+    } 
 }

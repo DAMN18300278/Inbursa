@@ -1,87 +1,87 @@
 {
   "Files": [
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\obj\\Debug\\net7.0\\build-gz\\iws3c1M6.gz",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\obj\\Debug\\net7.0\\build-gz\\AoT9M2cp.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Inbursa.Client.styles.css",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Inbursa.Client.styles.css",
       "PackagePath": "staticwebassets\\Inbursa.Client.styles.css"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\app.js",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\app.js",
       "PackagePath": "staticwebassets\\app.js"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
-      "Id": "F:\\DescargasF\\Inbursa-main\\Inbursa\\Inbursa.Client\\wwwroot\\src\\bg.jpg",
+      "Id": "C:\\Users\\Diego\\Desktop\\banco_PA\\Banco_PW\\Inbursa.Client\\wwwroot\\src\\bg.jpg",
       "PackagePath": "staticwebassets\\src\\bg.jpg"
     },
     {

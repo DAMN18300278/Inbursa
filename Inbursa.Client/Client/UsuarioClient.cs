@@ -1,26 +1,32 @@
+using System.Net.Http.Json;
 using Inbursa.Client.Models;
 
 
 namespace Inbursa.Client;
 
-public static class UsuarioClient
+public class UsuarioClient
 {
-     private static readonly List<Usuario> usuarios = new ()
+    private readonly HttpClient httpClient;
+    private readonly string baseUrl;
+
+    public UsuarioClient(HttpClient httpClient, IConfiguration configuration)
     {
-        new Usuario()
-        {
-            CURP= "ASDASDASDAS",
-            Nombre= "Diego",
-            Apellido_P ="Medel",
-            Apellido_M= "Nambo",
-            Cumpleanos = new DateTime(2008, 5, 1, 8, 30, 52),
-            Contrasena = "asda",
-            Autorizada = true,
-            Nom_Usuario = "Diego123"
-        },
-    };
-    public static Usuario[] GetUsuarios()
+        this.httpClient = httpClient;
+        this.baseUrl = "http://localhost:5237/api/Usuario";
+    }
+
+    public async Task<List<Usuario>> GetUsuariosAsync()
     {
-        return usuarios.ToArray();
+        return await httpClient.GetFromJsonAsync<List<Usuario>>($"{baseUrl}");
+    }
+
+    public async Task<Usuario> GetUsuarioAsync(int id)
+    {
+        return await httpClient.GetFromJsonAsync<Usuario>($"{baseUrl}/{id}");
+    }
+
+    public async Task<HttpResponseMessage> CrearUsuarioAsync(Usuario Usuario)
+    {
+        return await httpClient.PostAsJsonAsync($"{baseUrl}/Add", Usuario);
     }
 }
