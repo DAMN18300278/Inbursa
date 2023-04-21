@@ -56,18 +56,30 @@
 @code {
     [Parameter]
     public string? Curp { get; set; }
-    private string? Nombres { get; set; }
+    private string? Nombre { get; set; }
     private string? ApellidoPaterno { get; set; }
     private string? ApellidoMaterno { get; set; }
     private DateTime FechaNacimiento { get; set; }
     private string? Password { get; set; }
-    private bool Autorizada { get; set; }
+    private int Autorizada { get; set; }
     private string? NombreUsuario { get; set; }
     private string? Error { get; set; }
     private Usuario model = new();
 
+    protected override async Task OnInitializedAsync() => 
+    model = await Http.GetFromJsonAsync<Usuario>("http://localhost:5237/api/Usuario/dajwdja1");
+
     private async Task CrearUsuario(){
-        await Http.PostAsJsonAsync("http://localhost:5237/api/Usuario/Add", model);
+        var formData = new Dictionary<string, String>(){
+                { "curp", Curp },
+                { "nombre", Nombre },
+                { "apellido_P", ApellidoPaterno },
+                { "apellido_M", ApellidoMaterno },
+                { "cumpleanos", FechaNacimiento.ToString() },
+                { "autorizada", "1" },
+                { "nom_Usuario", NombreUsuario }
+            };
+        await Http.PostAsJsonAsync("http://localhost:5237/api/Usuario/Add", formData);
     }
 
     private void ValidarCurp()
@@ -96,7 +108,7 @@
 
     private bool ValidarCURP(string curp)
     {
-        if (string.IsNullOrEmpty(Nombres) || string.IsNullOrEmpty(ApellidoPaterno) || string.IsNullOrEmpty(ApellidoMaterno))
+        if (string.IsNullOrEmpty(Nombre) || string.IsNullOrEmpty(ApellidoPaterno) || string.IsNullOrEmpty(ApellidoMaterno))
         {
             return true; 
         }
@@ -111,7 +123,7 @@
                curp.Substring(8, 2) == FechaNacimiento.ToString("MM") &&
                curp.Substring(6, 2) == FechaNacimiento.ToString("dd") &&
                curp.Substring(13, 1) == (string.IsNullOrEmpty(ApellidoMaterno) ? "X" : ApellidoMaterno.Substring(0, 1)) &&
-               curp.Substring(12, 1) == Nombres.Substring(0, 1) &&
+               curp.Substring(12, 1) == Nombre.Substring(0, 1) &&
                curp.Substring(14, 1) == (string.IsNullOrEmpty(NombreUsuario) ? "X" : NombreUsuario.Substring(0, 1)) &&
                curp.Substring(15, 1) == Password.Substring(0, 1);
     }
