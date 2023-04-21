@@ -1,5 +1,6 @@
-using Inbursa.Models;
-namespace Inbursa;
+using Inbursa.Client.Models;
+
+namespace Inbursa.Client;
 
 public static class EmpleadoClient
 {

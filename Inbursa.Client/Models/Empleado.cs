@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Inbursa.Models;
-
+namespace Inbursa.Client.Models;
 public class Empleado
 {
     public int Nomina { get; set; }

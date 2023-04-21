@@ -1,6 +1,6 @@
-using Inbursa.Models;
+using Inbursa.Client.Models;
 
-namespace Inbursa;
+namespace Inbursa.Client;
 
 public static class HistorialClient
 {
