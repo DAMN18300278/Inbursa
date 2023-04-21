@@ -2,85 +2,11 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-@* <head>
-  <style>
-    .container {
-      margin-top: 50px;
-    }
-    .card {
-      background-color: #FFFFFF;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .card-header {
-      background-color: #333333;
-      border-radius: 5px 5px 0 0;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 10px;
-    }
-    .card-body {
-      padding: 20px;
-    }
-    .form-control {
-      border-color: #DDDDDD;
-    }
-    .btn-primary {
-      background-color: #e0c319;
-      border-color: #e0c319;
-    }
-    .btn-primary:hover {
-      background-color: #e0c319;
-      border-color: #e0c319;
-    }
-    .btn-secondary {
-      background-color: #333333;
-      border-color: #333333;
-    }
-    .btn-secondary:hover {
-      background-color: #2E2E2E;
-      border-color: #2E2E2E;
-    }
-  </style>
-
-</head>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header"> 
-            <h4 class="mb-0">Iniciar sesión</h4>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <label for="user">Usuario</label>
-                <input type="user" class="form-control" id="user" required>
-              </div>
-              <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" class="form-control" id="password" required>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-block"> 
-                  Iniciar sesión
-                  <span class="spinner-border spinner-border-sm ml-2 d-none"></span>
-                </button>
-              </div>
-            </form>
-          </div> 
-          <button type="button" class="btn btn-secondary btn-block mt-3" >Registrarse</button> 
-        </div>
-      </div>
-    </div>
-  </div> *@
-
 <div class="w-50 bg-white h-75 mx-auto shadow mt-5 d-flex" style="border-radius: 25px;">
   <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
-  <div class="p-4 py-5">
+  <div class="p-4 py-5 d-flex flex-column">
     <h1 class="mb-4">Bienvenido a <span style="font-weight: bold">Inbursa</span></h1>
-    <form class="form-group border p-4 d-flex flex-column align-items-start">
+    <form class="form-group border p-4 d-flex flex-column align-items-start" style="overflow-y: scroll;">
       <h4>Inicio de sesión</h4>
       <div class="form-group mt-4 w-100">
         <label for="correo" class="fw-bold">Correo electronico:</label>
