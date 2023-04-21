@@ -268,65 +268,6 @@
         }
       },
       {
-        "HashCode": 680784620,
-        "Kind": "Components.Component",
-        "Name": "Inbursa.Client.Pages.Register",
-        "AssemblyName": "Inbursa.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Register"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Curp",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Curp",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.Pages.Register",
-          "Common.TypeNamespace": "Inbursa.Client.Pages",
-          "Common.TypeNameIdentifier": "Register"
-        }
-      },
-      {
-        "HashCode": 855022966,
-        "Kind": "Components.Component",
-        "Name": "Inbursa.Client.Pages.Register",
-        "AssemblyName": "Inbursa.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Inbursa.Client.Pages.Register"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Curp",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Curp",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Inbursa.Client.Pages.Register",
-          "Common.TypeNamespace": "Inbursa.Client.Pages",
-          "Common.TypeNameIdentifier": "Register",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -907505554,
         "Kind": "Components.Component",
         "Name": "Inbursa.Client.Pages.Users.Datos_PrestamosPage",
@@ -508,6 +449,65 @@
           "Common.TypeName": "Inbursa.Client.Pages.Users.RifaPage",
           "Common.TypeNamespace": "Inbursa.Client.Pages.Users",
           "Common.TypeNameIdentifier": "RifaPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 680784620,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Register",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Curp",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Curp",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Register",
+          "Common.TypeNamespace": "Inbursa.Client.Pages",
+          "Common.TypeNameIdentifier": "Register"
+        }
+      },
+      {
+        "HashCode": 855022966,
+        "Kind": "Components.Component",
+        "Name": "Inbursa.Client.Pages.Register",
+        "AssemblyName": "Inbursa.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Inbursa.Client.Pages.Register"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Curp",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Curp",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Inbursa.Client.Pages.Register",
+          "Common.TypeNamespace": "Inbursa.Client.Pages",
+          "Common.TypeNameIdentifier": "Register",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

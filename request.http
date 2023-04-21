@@ -1,14 +1,16 @@
+GET http://localhost:5237/api/Usuario/dajwdja1
+
 
 POST http://localhost:5237/api/Usuario/Add
 content-type: application/json
 
 {
-    "curp": "POPOOOOO",
+    "curp": "dajwdja1",
     "nombre": "1",
     "apellido_P": "1",
     "apellido_M": "1",
-    "cumpleanos": "2024-07-07T00:00:00",
-    "contrasena": "popo",
+    "cumpleanos": "2023-04-21T00:00:00",
+    "contrasena": "po",
     "autorizada": 1,
-    "nom_Usuario": "juan escutia"
+    "nom_Usuario": "qwe"
 }
