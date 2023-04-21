@@ -20,9 +20,8 @@ public interface IMyDbContext
 public class MyDbContext : DbContext, IMyDbContext
 {
     private readonly IConfiguration config;
-    public MyDbContext(IConfiguration _config)
+    public MyDbContext()
     {
-        config = _config;
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
