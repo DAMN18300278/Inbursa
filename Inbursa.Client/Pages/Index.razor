@@ -44,14 +44,25 @@
   {
     var response = await Http.GetFromJsonAsync<List<Usuario>>("http://localhost:5237/api/Usuario");
     var login = response.FirstOrDefault(u => u.Nom_Usuario == usuario.Nom_Usuario && u.Contrasena == usuario.Contrasena);
-
+    Console.WriteLine(login);
     if (login != null)
     {
-      NavigationManager.NavigateTo("/User");
+        if(login.TipoDeUsuario == "Gerente")
+        {
+            NavigationManager.NavigateTo("/Gerente");
+        }
+        else if(login.TipoDeUsuario == "Usuario")
+        {
+            NavigationManager.NavigateTo("/User");
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/Employee");
+        }
     }
     else
     {
-      loginFallido = true;
+        loginFallido = true;
     }
   }
 }
