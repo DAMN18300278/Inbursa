@@ -44,6 +44,14 @@
               "target": "Package",
               "version": "[4.0.1, )"
             },
+            "Blazorise": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "ChartJs.Blazor": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -74,6 +82,18 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Syncfusion.Blazor": {
+              "target": "Package",
+              "version": "[21.1.41, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[21.1.41, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[21.1.41, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",

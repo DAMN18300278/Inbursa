@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inbursa.Server.Models;
 
@@ -9,4 +10,7 @@ public class Cuenta
     [Key]
     public int Num_Cuenta { get; set; }
     public bool Prestamo_Activo { get; set; }
+
+    [ForeignKey("Usuario")]
+    public virtual Usuario cuentaUsuario { get; set; }
 }

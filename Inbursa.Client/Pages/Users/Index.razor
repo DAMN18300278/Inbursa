@@ -1,9 +1,81 @@
 @page "/User"
+@using Syncfusion.Blazor.Charts
+@inject NavigationManager NavigationManager
 
-<nav class="navbar navbar-expand-lg">
-  <svg xmlns="http://www.w3.org/2000/svg"  class="animate__animated animate__zoomInDown icon icon-tabler icon-tabler-feather" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <path id="icon" style="stroke-dashoffset: 0" d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
-    <path id="icon" style="stroke-dashoffset: 0" d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
-  </svg>
+<nav class="navbar navbar-expand-lg p-3">
+  <div class=" container-fluid justify-content-start pb-4">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-feather me-3" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;" onclick="window.location.href = '/User'">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path id="icon" style="stroke-dashoffset: 0" d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
+      <path id="icon" style="stroke-dashoffset: 0" d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
+    </svg>
+    <h1 class=" fw-bold text-white">Inbursa</h1>
+    <ul class=" navbar-nav ps-5">
+      <li class=" nav-item dropdown">
+        <a class=" nav-link text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true" id="navItemCuenta">Cuenta</a>
+        <ul class="dropdown-menu position-absolute animate__animated animate__bounceIn bg-black" style="border: 1px solid #505050; border-radius: 15px" aria-labelledby="navItemCuenta">
+          <li><a class="dropdown-item text-white py-2" href="/User">Historial de pagos</a></li>
+          <li><a class="dropdown-item text-white py-2" href="/User">Solicitar prestamos</a></li>
+          <li><a class="dropdown-item text-white py-2" href="/User">Datos de la cuenta</a></li>
+        </ul>
+      </li>
+      <li class=" nav-item ms-5">
+        <a class=" nav-link text-white" href="/User">Acerca de nosotros</a>
+      </li>
+      <li class=" nav-item ms-5">
+        <a class=" nav-link text-white" href="/User">Solicitar ayuda</a>
+      </li>
+    </ul>
+  </div>
 </nav>
+
+<div class="container animate__animated animate__fadeInUp text-white" style="animation-delay: 0.8s;">
+  <h1 class="h1 fw-bold text-center" style="font-size: 80px;">Bienvenido a Inbursa</h1>
+  <h3 class="text-center text-white-50">donde los sueños, se cumplen</h3>
+  <div class="container row">
+    <div class=" col-12 p-5">
+      <div style="border-radius: 15px; background-color: #e9ebe0">
+        @* <SfChart>
+            <ChartPrimaryXAxis ValueType="@Syncfusion.Blazor.Charts.ValueType.Category" LabelIntersectAction="@Syncfusion.Blazor.Charts.LabelIntersectAction.Rotate45"></ChartPrimaryXAxis>
+            <ChartSeriesCollection>
+                <ChartSeries DataSource="@chartData" XName="Month" YName="Temperature" Type="@Syncfusion.Blazor.Charts.ChartSeriesType.Line" Name="Temperature"></ChartSeries>
+            </ChartSeriesCollection>
+        </SfChart> *@
+      </div>
+    </div>
+  </div>
+</div>
+
+@code {
+    @* public List<WeatherData> chartData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        chartData = GetWeatherData();
+    }
+
+    public class WeatherData
+    {
+        public string Month { get; set; }
+        public double Temperature { get; set; }
+    }
+
+    private List<WeatherData> GetWeatherData()
+    {
+        return new List<WeatherData>
+        {
+            new WeatherData { Month = "Jan", Temperature = 35 },
+            new WeatherData { Month = "Feb", Temperature = 38 },
+            new WeatherData { Month = "Mar", Temperature = 43 },
+            new WeatherData { Month = "Apr", Temperature = 50 },
+            new WeatherData { Month = "May", Temperature = 58 },
+            new WeatherData { Month = "Jun", Temperature = 66 },
+            new WeatherData { Month = "Jul", Temperature = 72 },
+            new WeatherData { Month = "Aug", Temperature = 70 },
+            new WeatherData { Month = "Sep", Temperature = 64 },
+            new WeatherData { Month = "Oct", Temperature = 54 },
+            new WeatherData { Month = "Nov", Temperature = 44 },
+            new WeatherData { Month = "Dec", Temperature = 36 }
+        };
+    } *@
+}

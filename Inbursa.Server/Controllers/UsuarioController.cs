@@ -52,9 +52,11 @@ namespace Inbursa.Server.Controllers
                     Prestamo_Activo = false
                 };
 
-                String newNombre = usuario.CURP.Substring(0, 4);
+                String newNombre = usuario.CURP.Substring(0, 4) + usuario.Cumpleanos.ToString("dd") + usuario.Cumpleanos.ToString("MM") + usuario.Cumpleanos.ToString("yy");
 
                 usuario.Nom_Usuario = newNombre;
+
+                usuario.TipoDeUsuario = "Usuario";
 
                 usuario.Contrasena = usuario.Cumpleanos.Day.ToString() + "-" + usuario.Cumpleanos.Month.ToString() + "-" + usuario.Cumpleanos.Year.ToString();
 
@@ -74,6 +76,13 @@ namespace Inbursa.Server.Controllers
             {
                 return StatusCode(StatusCodes.Status302Found, ex.Message);
             }
+        }
+
+        [HttpPost("UpdateAuth")]
+        public async Task<ActionResult> UpdateAuth(Usuario usuario){
+            context.Entry(usuario).State = EntityState.Modified;
+            await context.SaveChangesAsync();
+            return Ok();
         }
     }
 }
