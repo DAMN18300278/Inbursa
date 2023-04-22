@@ -24,14 +24,14 @@ namespace Inbursa.Server.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cuenta>>> GetCuentas()
         {
-            return await context.Cuenta.ToListAsync();
+            return await context.Cuenta.Include(c => c.cuentaUsuario).ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Cuenta>> GetCuentaById(int id)
         {
             var cuenta = await context.Cuenta.FirstOrDefaultAsync(c => c.Num_Cuenta == id);
-
+ 
             if (cuenta == null)
             {
                 return NotFound();

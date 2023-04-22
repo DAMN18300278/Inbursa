@@ -1,4 +1,4 @@
-# GET http://localhost:5237/api/Usuario/dajwdja1
+GET http://localhost:5237/api/Cuenta
 
 
 POST http://localhost:5237/api/Usuario/Add
