@@ -12,4 +12,5 @@ public class Usuario
     public String Contrasena {get; set;}
     public int Autorizada {get; set;}
     public String Nom_Usuario {get; set;}
+    public String TipoDeUsuario {get; set;}
 }
