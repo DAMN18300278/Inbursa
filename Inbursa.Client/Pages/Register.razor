@@ -1,9 +1,6 @@
 @page "/register"
-@using Microsoft.AspNetCore.Components.Forms
-@using System.Collections.Generic
-@using System.Text.RegularExpressions
-@using Microsoft.Extensions.Logging
-@using Inbursa.Client
+@using System.Text.Json
+@inject IJSRuntime JSRuntime
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 @using Inbursa.Client.Models
@@ -12,129 +9,83 @@
   <div id="bg-login" class="h-100 w-50" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;"></div>
   <div class="p-4 py-5 w-100 h-100 d-flex flex-column"> 
     <h1 class="mb-4">Comience su experiencia con <span style="font-weight: bold">Inbursa</span></h1>
-    <EditForm Model="@model" OnValidSubmit="@CrearUsuario" class="form-group border p-4 d-flex flex-column align-items-start w-100 h-100" style="overflow-y: scroll;">
-      <DataAnnotationsValidator />
-      <ValidationSummary />
+    <EditForm Model="@model" OnValidSubmit="CrearUsuario" class="form-group border p-4 d-flex flex-column align-items-start w-100 h-100" style="overflow-y: scroll;">
       <h4>Registro de cuenta</h4>
+      <DataAnnotationsValidator />
+      <ValidationSummary/>
       <div class="form-group mt-4 w-100">
           <label for="curp" class="fw-bold">CURP</label>
-          <InputText id="curp" class="form-control p-2 px-3" @bind-Value="@model.CURP" placeholder="Curp"></InputText>
+          <InputText id="curp" class="form-control p-2 px-3" @bind-Value="model.CURP" placeholder="Curp"/>
           <ValidationMessage For="@(() => model.CURP)" />
       </div>
       <div class="form-group mt-4 w-100">
           <label for="nombres" class="fw-bold">Nombres</label>
-          <InputText id="nombres" class="form-control p-2 px-3" @bind-Value="@model.Nombre" placeholder=""/>
+          <InputText id="nombres" class="form-control p-2 px-3" @bind-Value="model.Nombre" placeholder="Nombre(s)"/>
+          <ValidationMessage For="@(() => model.Nombre)" />
       </div>
       <div class="form-group mt-4 w-100">
           <label for="apellidoPaterno" class="fw-bold">Apellido Paterno</label>
-          <InputText id="apellidoPaterno" class="form-control p-2 px-3" @bind-Value="@model.Apellido_P" placeholder=""/>
+          <InputText id="apellidoPaterno" class="form-control p-2 px-3" @bind-Value="model.Apellido_P" placeholder="Apellido Paterno"/>
+          <ValidationMessage For="@(() => model.Apellido_P)" />
       </div>
       <div class="form-group mt-4 w-100">
           <label for="apellidoMaterno" class="fw-bold">Apellido Materno</label>
-          <InputText id="apellidoMaterno" class="form-control p-2 px-3" @bind-Value="@model.Apellido_M" placeholder=""/>
+          <InputText id="apellidoMaterno" class="form-control p-2 px-3" @bind-Value="model.Apellido_M" placeholder="Apellido Materno"/>
+          <ValidationMessage For="@(() => model.Apellido_M)" />
       </div>
       <div class="form-group mt-4 w-100">
           <label for="fechaNacimiento" class="fw-bold">Fecha de Nacimiento</label>
-          <InputDate id="fechaNacimiento" class="form-control p-2 px-3" @bind-Value="@model.Cumpleanos" placeholder=""/>
-      </div>
-      <div class="form-group mt-4 w-100">
-          <label for="password" class="fw-bold">Contraseña</label>
-          <InputText id="password" class="form-control p-2 px-3" @bind-Value="@model.Contrasena" type="password" placeholder=""/>
-      </div>
-      <div class="form-group mt-4 w-100">
-          <label for="nombreUsuario" class="fw-bold">Nombre de Usuario</label>
-          <InputText id="nombreUsuario" class="form-control p-2 px-3" @bind-Value="@model.Nom_Usuario" placeholder=""/>
+          <InputDate id="fechaNacimiento" class="form-control p-2 px-3" @bind-Value="model.Cumpleanos"/>
+          <ValidationMessage For="@(() => model.Cumpleanos)" />
       </div>
       <button type="submit" class="btn btn-primary p-2 px-4 rounded-pill mt-4" style="letter-spacing: 2px;"> 
         Registrarme
       </button>
+      <p class="@(showCurpInv ? "" : "d-none")">El curp es invalido</p>
+      <p class="@(showUserInv ? "" : "d-none")">Usuario generado anteriormente</p>
       <a class="mt-2 link-dark" href="/" onclick="cambiarPestaña()" style="cursor: pointer;">Log In</a>
     </EditForm>
   </div>
 </div>
 
 @code {
-    [Parameter]
-    public string? Curp { get; set; }
-    private string? Nombre { get; set; }
-    private string? ApellidoPaterno { get; set; }
-    private string? ApellidoMaterno { get; set; }
-    private DateTime FechaNacimiento { get; set; }
-    private string? Password { get; set; }
-    private int Autorizada { get; set; }
-    private string? NombreUsuario { get; set; }
-    private string? Error { get; set; }
     private Usuario model = new();
+    private bool showCurpInv = false;
+    private bool showUserInv = false;
+    
+    DateTime fechaActual = DateTime.Today;
 
-    protected override async Task OnInitializedAsync() => 
-    model = await Http.GetFromJsonAsync<Usuario>("http://localhost:5237/api/Usuario/dajwdja1");
+    @*protected override async Task OnInitializedAsync() => *@
+    @*model = await Http.GetFromJsonAsync<Usuario>("http://localhost:5237/api/Usuario/dajwdja1");*@
+
+    protected override void OnInitialized()
+    {
+        model.Cumpleanos = fechaActual;
+    }
 
     private async Task CrearUsuario(){
-        var formData = new Dictionary<string, String>(){
-                { "curp", Curp },
-                { "nombre", Nombre },
-                { "apellido_P", ApellidoPaterno },
-                { "apellido_M", ApellidoMaterno },
-                { "cumpleanos", FechaNacimiento.ToString() },
-                { "autorizada", "1" },
-                { "nom_Usuario", NombreUsuario }
-            };
-        await Http.PostAsJsonAsync("http://localhost:5237/api/Usuario/Add", formData);
-    }
 
-    private void ValidarCurp()
-    {
-        if (string.IsNullOrEmpty(Curp))
-        {
-            Error = "Debe ingresar un CURP";
-        }
-        else if (Curp.Length != 18)
-        {
-            Error = "El CURP debe tener 18 caracteres";
-        }
-        else if (Curp != Curp.ToUpper())
-        {
-            Error = "El CURP debe estar en mayúsculas";
-        }
-        else if (!ValidarCURP(Curp))
-        {
-            Error = "El CURP no es válido para los datos ingresados";
-        }
-        else
-        {
-            Error = null;
+        bool val1 = (model.CURP.Substring(0, 2).ToLower().Equals(model.Apellido_P.Substring(0, 2).ToLower()));
+        bool val2 = (model.CURP.Substring(2, 1).ToLower().Equals(model.Apellido_M.Substring(0, 1).ToLower()));
+        bool val3 = (model.CURP.Substring(3, 1).ToLower().Equals(model.Nombre.Substring(0, 1).ToLower()));
+        bool val4 = (model.CURP.Substring(4, 2).Equals(model.Cumpleanos.ToString("yyyy").Substring(2, 2)));
+        bool val5 = (model.CURP.Substring(6, 2).Equals(model.Cumpleanos.ToString("MM")));
+        bool val6 = (model.CURP.Substring(8, 2).Equals(model.Cumpleanos.ToString("dd")));
+                                
+        if(val1 && val2 && val3 && val4 && val5 && val6){
+            var jsonSerializerOptions = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
+            HttpResponseMessage response = await Http.PostAsJsonAsync("http://localhost:5237/api/Usuario/Add", model, jsonSerializerOptions);
+            if(response.StatusCode != System.Net.HttpStatusCode.Found && response.StatusCode != System.Net.HttpStatusCode.InternalServerError){
+                NavigationManager.NavigateTo("/");
+            }else{
+                showUserInv = true;
+                await Task.Delay(3000);
+                showUserInv = false;
+            }
+        }else{
+            showCurpInv = true;
+            await Task.Delay(3000);
+            showCurpInv = false;
         }
     }
-
-    private bool ValidarCURP(string curp)
-    {
-        if (string.IsNullOrEmpty(Nombre) || string.IsNullOrEmpty(ApellidoPaterno) || string.IsNullOrEmpty(ApellidoMaterno))
-        {
-            return true; 
-        }
-
-        var anio = int.Parse(curp.Substring(4, 2));
-        var mes = int.Parse(curp.Substring(6, 2));
-        var dia = int.Parse(curp.Substring(8, 2));
-        var fechaNacimientoCurp = new DateTime(anio < 30 ? 2000 + anio : 1900 + anio, mes, dia);
-
-        return curp.Substring(0, 4) == ApellidoPaterno.Substring(0, 4) &&
-               curp.Substring(10, 2) == FechaNacimiento.ToString("yy") &&
-               curp.Substring(8, 2) == FechaNacimiento.ToString("MM") &&
-               curp.Substring(6, 2) == FechaNacimiento.ToString("dd") &&
-               curp.Substring(13, 1) == (string.IsNullOrEmpty(ApellidoMaterno) ? "X" : ApellidoMaterno.Substring(0, 1)) &&
-               curp.Substring(12, 1) == Nombre.Substring(0, 1) &&
-               curp.Substring(14, 1) == (string.IsNullOrEmpty(NombreUsuario) ? "X" : NombreUsuario.Substring(0, 1)) &&
-               curp.Substring(15, 1) == Password.Substring(0, 1);
-    }
-
-    private async Task Registrar()
-    {
-        ValidarCurp();
-
-        if (!string.IsNullOrEmpty(Error))
-        {
-            return;
-        }
-    } 
 }

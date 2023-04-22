@@ -52,6 +52,12 @@ namespace Inbursa.Server.Controllers
                     Prestamo_Activo = false
                 };
 
+                String newNombre = usuario.CURP.Substring(0, 4);
+
+                usuario.Nom_Usuario = newNombre;
+
+                usuario.Contrasena = usuario.Cumpleanos.Day.ToString() + "-" + usuario.Cumpleanos.Month.ToString() + "-" + usuario.Cumpleanos.Year.ToString();
+
                 // Agregar el usuario a la base de datos
                 await context.Usuario.AddAsync(usuario);
 
@@ -66,7 +72,7 @@ namespace Inbursa.Server.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return StatusCode(StatusCodes.Status302Found, ex.Message);
             }
         }
     }
